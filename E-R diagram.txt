@@ -1,0 +1,20 @@
+Account and Application:
+
+	Relationship: 
+		Each application belongs to one account (one-to-many relationship from Account to Application).
+	Foreign Key: 
+		account_id in Application references id in Account.
+
+Application and TermCourseRegistrationApplication:
+	
+	Relationship: 
+		Each course registration is linked to one application (one-to-many relationship from Application to TermCourseRegistrationApplication).
+	Foreign Key: 
+		application_id in TermCourseRegistrationApplication references id in Application.
+
+Course and TermCourseRegistrationApplication:
+
+	Relationship: 
+		Each course registration refers to one course (one-to-many relationship from Course to TermCourseRegistrationApplication).
+	Foreign Key: 
+		course_id in TermCourseRegistrationApplication references id in Course.
