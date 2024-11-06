@@ -1,0 +1,38 @@
+Problem Statement:
+
+You are assigned to fetch course registration data from a database. The relevant tables are:
+
+TermCourseRegistrationApplication: 
+	Contains course registration details, including the level at which the course is being applied for.
+Application: 
+	Stores student application details, including the status of the application.
+Account: 
+	Holds user account information, such as email and program.
+Course: 
+	Contains course-related data, including the course name and associated fee.
+
+Task:
+
+	You need to write a Python program that:
+	Connects securely to the SQL database.
+	Executes a query that joins the above tables.
+	Returns a DataFrame with the following fields:
+		Program
+		Email
+		Course name
+		Applying level
+		Current level
+		Fee details
+		Application status
+
+Additional Requirements:
+
+	Ensure the database connection uses environment variables for credentials to handle it securely.
+	Implement error handling for the database connection and query execution.
+	Optimize the code to handle large datasets efficiently.
+	Provide an Entity-Relationship (ER) Diagram for the database schema.
+
+Submission:
+
+	Submit your code via GitHub.
+	Include a README file explaining how to set up and run the program.
